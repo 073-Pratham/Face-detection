@@ -123,7 +123,7 @@ def get_data_generators(data_dir='data/balanced', target_size=(48, 48), batch_si
     return train_generator, validation_generator
 
 if __name__ == '__main__':
-    # First, balance the dataset (this may take several minutes depending on your data)
+    # First, balance the dataset 
     balance_dataset()
     # Then, test the generators
     train_gen, valid_gen = get_data_generators()
